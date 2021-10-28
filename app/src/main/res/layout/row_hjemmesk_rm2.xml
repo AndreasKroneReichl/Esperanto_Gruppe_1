@@ -35,6 +35,7 @@
             android:layout_marginTop="@dimen/_21pxv"
             android:layout_width="@dimen/_59pxh"
             android:scaleType="centerCrop"
+            android:elevation="@dimen/_2sp"
             cornerRadius="@{@dimen/_8pxh}"
             imageRes="@{@drawable/img_skrmbillede_20211025_kl_1149_1}" tools:src="@drawable/img_skrmbillede_20211025_kl_1149_1"/>
     </FrameLayout>
