@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="hjemmeskRm1RowModel" type="com.application.app.modules.hjemmeskrm.data.model.HjemmeskRm1RowModel"/>
+    </data>
+    <LinearLayout android:clickable="true" android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <FrameLayout android:id="@+id/frame"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_weight="0.8" android:layout_width="0dp" style="@style/groupStylegray_400cornerRadius">
+                <ImageView android:gravity="center"
+                    android:id="@+id/image"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_17pxv"
+                    android:layout_marginBottom="@dimen/_25pxv"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_57pxh"
+                    android:scaleType="centerCrop" android:src="@drawable/img_unnamed_6"/>
+            </FrameLayout>
+            <TextView android:gravity="center|start"
+                android:id="@+id/txtElsendoDe2021"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13pxh"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_weight="0.9" android:layout_width="0dp"
+                android:text="@{hjemmeskRm1RowModel.txtElsendoDe2021}"
+                style="@style/txtRobotomedium8" tools:text="@string/msg_elsendo_de_2021"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.application.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.application.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.application.app.modules.specefikkanal.ui.SpecefikKanalActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.hjemmeskrm.ui.HjemmeskRmActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.kanaler.ui.KanalerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.favoritter.ui.FavoritterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.afspiller.ui.AfspillerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.sg.ui.SGActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.startside4.ui.StartSide4Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.splash.ui.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.app.modules.startside3.ui.StartSide3Activity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
