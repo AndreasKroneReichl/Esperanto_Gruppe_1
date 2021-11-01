@@ -22,7 +22,7 @@ abstract class BaseFragment<T : ViewDataBinding>(@LayoutRes val layoutId: Int) :
         binding.lifecycleOwner = requireActivity()
         return binding.root
     }
-
+//
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         addObservers()
